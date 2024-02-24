@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Medical Prescription Reader</title>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to our Medical Prescription Reader</h1>
+        <p>Upload your prescription and compare medication prices on different websites.</p>
+    </header>
+
+    <section>
+        <div id="prescription-upload">
+            <h2>Upload Prescription</h2>
+            <form action="/upload" method="post" enctype="multipart/form-data">
+                <input type="file" id="file-upload" name="prescription" accept=".jpg, .jpeg, .png, .pdf">
+                <button type="button" onclick="uploadPrescription()">Upload</button>
+            </form>
+        </div>
+
+        <div id="price-comparison">
+            <h2>Price Comparison</h2>
+            <!-- Display comparison results here -->
+            <div id="comparison-results"></div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Medical Prescription Reader</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
